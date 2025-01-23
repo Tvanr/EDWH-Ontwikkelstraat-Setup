@@ -3,10 +3,11 @@ een tekst bestand die een beginnende gebruiker uit moet leggen hoe de ontwikkels
 
 ## Stap 1: benodigdheding installeren
 1. open de terminal (`CTRL+ALT+T`)
-1. `sudo apt install python3.12 python3.12-venv` en misschien python3.12-pip
+1. `sudo apt install python3.12 python3.12-venv pyton3-pip`
 1. `sudo apt install git`
-1. `pip install uv`
-1. `pip install uvenv`
+1. `pipx install uv`
+2.  Als hier een melding komt die je vraagt `pipx ensurepath` uit te voeren doe dat dan.
+1. `pipx install uvenv`
 1. `uv tool install edwh`
 1. `uv tool install virtualenv`
 1. `edwh plugin.add all`
@@ -22,7 +23,7 @@ klik op de groene knop "code" klik deze aan dan krijg je 3 opties https, SSH of 
 klik op SSH en kopieer de SSH link.<br>
 ga naar de terminal en typ: `git clone <githubSSHlink>`<br>
 doe dit ook voor https://github.com/educationwarehouse/reverse_proxy/ <br>
-controlleer of dit gelukt is door in de home folder `ls` te typen dan zou je de mappen moeten zien.
+controlleer of dit gelukt is door in de home folder het commando `ls` uit te voeren. Dit laat alle bestanden zien. En je zou dan ook de net geinstalleerde mappen moeten zien.
 
 ## stap 4:VM maken
 `multipass launch docker --name dockers` <br>
