@@ -3,13 +3,10 @@ een tekst bestand die een beginnende gebruiker uit moet leggen hoe de ontwikkels
 
 ## Stap 1: benodigdheding installeren
 1. open de terminal (`CTRL+ALT+T`)
-1. `sudo apt install python3.12 python3.12-venv pyton3-pip`
-1. `sudo apt install git`
-1. `pipx install uv`
-2.  Als hier een melding komt die je vraagt `pipx ensurepath` uit te voeren doe dat dan.
-1. `pipx install uvenv`
-1. `uv tool install edwh`
-1. `uv tool install virtualenv`
+1. `sudo apt install python3.12 python3.12-venv python3-pip git`
+1. `pip install --break-system-packages uvenv`
+1. `~/.local/bin/uvenv setup`
+1. `uvenv install edwh`
 1. `edwh plugin.add all`
 1. `edwh mp.install` om multipass te installeren. multipass is een VM programma
 
